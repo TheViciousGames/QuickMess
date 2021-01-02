@@ -1,0 +1,23 @@
+{
+    "name": "quickmess",
+    "shortname": "quickmess",
+    "description": "A quick messenger for anyone.",
+    "start_url": ".",
+    "background_color": "#FFE800",
+    "theme_color": "#FFE800",
+    "display": "standalone",
+    "icons":
+    [
+        {
+            "src": "images/android.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "images/ios.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+    
+}

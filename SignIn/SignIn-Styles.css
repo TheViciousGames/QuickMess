@@ -1,0 +1,21 @@
+.logIn-box{
+    text-align: center;
+  }
+.card-panel.logIn{
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 1px 3px rgba(90,90,90,0.1);
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr;
+    grid-template-areas: "image details delete";
+    position: center;
+  }
+.coolYellow
+{
+    background-color: #FFE800;
+}
+::placeholder { /* e.g. account creation details color */
+  color: black;
+  opacity: 1;
+}

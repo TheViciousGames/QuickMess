@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000">
+
+    <title>Log In</title>
+    <!-- materialize icons, css & js -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="SignIn/SignIn-Styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="materialize/materialize.min.js"></script>
+    <script type="text/javascript" src="SignIn/UI.js"></script>
+  </head>
+
+  <body class="black">
+    <!-- shadow lvl 3 top nav -->
+
+    <nav class="z-depth-3 coolYellow">
+      <div class="nav-wrapper container">
+        <a class="brand-logo center black-text">QuickMess</a>
+        <span class="right black-text">
+          <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+        </span>
+      </div>
+    </nav>
+
+    <ul id="side-menu" class="sidenav side-menu coolYellow">
+      <li><a class="subheader">Options</a></li>
+      <li><a class="waves-effect">Settings</li>
+        <li><a class="waves-effect">Log Out</li>
+          <li><div class="divider"></div></li>
+        </ul>
+        <div class="container black-text text-darken-1 black">
+          <div class="card-panel coolYellow row black-text">
+
+            <div class="login-box center black-text">
+              <h1 class="black-text">Sign In</h1>
+
+              <div class="textbox black-text">
+                <input id="signInEmail" type="text" placeholder="Email">
+              </div>
+
+              <div class="textbox black-text">
+                <input id="signInPassword" type="password"
+                  placeholder="Password">
+              </div>
+
+              <div>
+                <a id="signInButton" class="btn-small
+                  black pulse
+                  center"><i class="material-icons right">check</i>Log In</a>
+                <a class="btn-small black pulse
+                  center sidenav-trigger" data-target="side-form"><i
+                    class="material-icons right">add</i>Register</a>
+              </div>
+            </div>
+
+
+
+            <div id="side-form" class="sidenav side-form coolYellow">
+              <form class="container section" id="registrationForm">
+                <h6 class="black-text">New Account</h6>
+                <div class="divider black-text"></div>
+                <div class="input-field black-text">
+                  <input placeholder="e.g. John2323" id="registrationPublicName"
+                    type="text" class="validate"> <label for="publicName">Public
+                    Name</label>
+                  <div class="input-field black-text">
+                    <input placeholder="e.g. JeffBezos@gmail.com"
+                      id="registrationEmail" type="text" class="validate">
+                    <label for="e-mail">E-mail</label>
+                  </div>
+                </div>
+                <div class="input-field black-text">
+                  <input placeholder="e.g. AbcdeF1" id="registrationPassword"
+                    type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+                <a id="registrationButton" class="waves-light
+                  btn-small black pulse
+                  center"><i class="material-icons right">add</i>Create</a>
+              </form>
+            </div>
+            <script
+              src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+            <script
+              src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+            <script
+              src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+            <script
+              src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+            <script src="authUtils.js"></script>
+          </body>
+        </html>

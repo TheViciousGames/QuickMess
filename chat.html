@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000">
+
+    <title>Chat</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="Chat/Chat-Styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="materialize/materialize.min.js"></script>
+    <script type="text/javascript" src="Chat/UI.js"></script>
+    <script type="text/javascript" src="materialize/materialize.min.js"></script>
+   
+  </head>
+  <body class="black">
+
+    <!-- top nav -->
+    <!-- shadow lvl 3 top nav z-depth-3 yellow-->
+
+    <!-- side nav -->
+    <ul id="side-menu" class="sidenav side-menu yellow">
+      <li><a class="subheader">Messenger</a></li>
+      <li><a href="/" class="waves-effect">Home</a></li>
+      <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+      <li><div class="divider"></div></li>
+      <li><a href="/pages/contact.html" class="waves-effect">
+          <i class="material-icons">mail_outline</i>Contact</a>
+      </li>
+    </ul>
+
+    <div>
+      <div class="app">
+
+        <div class="head clearfix">
+
+          <span>
+            <button id="signOutButton" class="signOutButton">Sign Out</button>
+          </span>
+
+          <span class="title black-text">QuickMess</span>
+
+          <span class="create-new"> <i class="fa fa-pencil-square-o"></i>
+          </span>
+        </div>
+
+        <div class="search-bar">
+          <i class="fa fa-search"></i>
+          <input type="text" class="ip-search" placeholder="Search" />
+        </div>
+
+          <div class="chat-messages">
+            <div class="chat">
+              <div class="chat-content clearfix">
+                <ul id="messageList">
+                </ul>
+              </div>
+
+              <form>
+                <input id="message" type="text" class="ip-msg yellow black-text" placeholder="type something.."/>
+                <a id="sendMessageButton" class="btn-small yellow center black-text"><i class="material-icons right">check</i>Send</a>
+              </form>
+              
+      
+
+            
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+    <script src="Chat/chat.js"></script>
+ 
+  </body>
+</html>
